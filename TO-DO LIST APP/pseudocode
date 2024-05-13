@@ -1,0 +1,46 @@
+Define a class Node:
+    Initialize a Node with a task and a reference to the next Node
+
+Define a class LinkedList:
+    Initialize an empty linked list with a head Node
+
+    Method to add a new task to the end of the linked list:
+        Create a new Node with the given task
+        If the list is empty:
+            Set the new Node as the head of the list
+        Else:
+            Traverse the list to find the last Node
+            Append the new Node to the last Node's next reference
+
+    Method to view all tasks in the linked list:
+        If the list is empty:
+            Inform the user that the list is empty
+        Else:
+            Traverse the list and print each task along with its index
+
+    Method to mark a task as completed and remove it from the linked list:
+        If the list is empty:
+            Inform the user that the list is empty
+        If the provided task index is invalid:
+            Inform the user that the task number is invalid
+        If the task to complete is the first one:
+            Update the head pointer to the next Node
+        Else:
+            Traverse the list to find the Node at the specified index
+            Remove the Node from the list by updating the previous Node's next reference
+
+Define a main function:
+    Create an instance of LinkedList to manage the to-do list
+
+    Display a menu and prompt the user for choice:
+        1. Add Task
+        2. View Tasks
+        3. Complete Task
+        4. Exit
+
+    Based on the user's choice:
+        - Call the corresponding method of LinkedList
+        - Handle invalid choices
+
+Entry point of the program:
+    Call the main function
